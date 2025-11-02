@@ -136,8 +136,13 @@ header_html = f"""
 """
 st.markdown(header_html, unsafe_allow_html=True)
 
-st.info("Αυτό είναι demo. Χρησιμοποιήστε έναν από τους demo κωδικούς (demo1..demo50) ή test123 (για admin). Κάθε demo έχει 7 ημέρες trial από την πρώτη χρήση.")
-
+st.markdown(
+    "<div style='text-aling:center; color:#444; background-color:#f2f2f2; "
+    "padding:12px; border-radius:8px; font-size:16px;'>"
+    "Χρησιμοποιήστε τον demo κωδικό που σας δόθηκε.<br>"
+    "Καλή σας απόλαυση!"
+    "</div"
+    unsafe_allow_html=True)
 # code input
 code_input = st.text_input("🔐 Εισάγετε demo κωδικό:", type="password")
 
