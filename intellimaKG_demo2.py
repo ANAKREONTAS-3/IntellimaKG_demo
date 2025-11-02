@@ -207,11 +207,11 @@ if code_input:
 
             st.markdown("---")
             st.caption("Μόνο εσείς (admin) βλέπετε αυτή τη σελίδα. Προσοχή: αν διαγράψετε το trials.json οι trials θα χάσουν το ιστορικό τους.")
-    else:
-        # normal demo user
-        # register first use if needed (but do not reset existing)
-        db = ensure_entry(db, code)
-        # if first_use is None -> register today as first use
+        else:
+            # normal demo user
+            # register first use if needed (but do not reset existing)
+            db = ensure_entry(db, code)
+            # if first_use is None -> register today as first use
         if db[code]["first_use"] is None:
             db = register_use(db, code) # will set first_use = today and increment uses
         else:
