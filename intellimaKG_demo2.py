@@ -141,9 +141,9 @@ st.markdown(
     "padding:12px; border-radius:8px; font-size:16px;'>"
     "Χρησιμοποιήστε τον demo κωδικό που σας δόθηκε.<br>"
     "Καλή σας απόλαυση!"
-    "</div"
+    "</div>"
     unsafe_allow_html=True)
-    
+
 # code input
 code_input = st.text_input("🔐 Εισάγετε demo κωδικό:", type="password")
 
