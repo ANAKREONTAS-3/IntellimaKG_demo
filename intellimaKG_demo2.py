@@ -143,6 +143,7 @@ st.markdown(
     "Καλή σας απόλαυση!"
     "</div"
     unsafe_allow_html=True)
+    
 # code input
 code_input = st.text_input("🔐 Εισάγετε demo κωδικό:", type="password")
 
