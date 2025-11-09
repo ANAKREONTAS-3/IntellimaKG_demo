@@ -137,11 +137,13 @@ header_html = f"""
 st.markdown(header_html, unsafe_allow_html=True)
 
 st.markdown(
+    """
     "<div style='text-aling:center; color:#444; background-color:#f2f2f2;>"
-    "padding:12px; border-radius:8px; font-size:16px;'>"
-    "Χρησιμοποιήστε τον demo κωδικό που σας δόθηκε.<br>"
-    "Καλή σας απόλαυση!"
+                 padding:12px; border-radius:8px; font-size:16px;'>"
+            Χρησιμοποιήστε τον demo κωδικό που σας δόθηκε.<br>"
+         Καλή σας απόλαυση!"
     "</div>"
+    """
     unsafe_allow_html=True
 )
 
